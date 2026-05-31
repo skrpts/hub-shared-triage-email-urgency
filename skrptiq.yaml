@@ -1,0 +1,25 @@
+# --- Identity ---
+id: "ce9c2eac-c128-4a6b-a83b-ae7f9bb5e0b4"
+name: "triage-email-urgency"
+display_name: "Triage Urgency"
+description: "Classifies emails by urgency level for the morning briefing"
+version: "1.0.0"
+engine: ">=0.1.0"
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/hub-shared-triage-email-urgency"
+category: "shared"
+tags:
+  - "shared"
+  - "prompt"
+contents:
+  skills: 0
+  prompts: 1
+  workflows: 0
+  services: 0
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 1

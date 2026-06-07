@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "ce9c2eac-c128-4a6b-a83b-ae7f9bb5e0b4"
+id: "7ae86833-f0f9-4ec7-8a9c-419d9af83c0b"
 name: "triage-email-urgency"
 display_name: "Triage Urgency"
 description: "Classifies emails by urgency level for the morning briefing"
-version: "1.0.0"
+version: "1.0.1"
 engine: ">=0.1.0"
 author:
   name: "skrptiq"

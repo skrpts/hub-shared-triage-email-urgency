@@ -4,6 +4,11 @@ id: triage-email-urgency
 title: Triage Urgency
 description: "Classifies emails by urgency level for the morning briefing"
 tags: [Production, Email]
+context_params:
+  emails:
+    label: "Emails"
+    description: "The fetched emails to classify by urgency."
+    required: true
 metadata:
   output_format: structured
   prompt_type: task
@@ -52,7 +57,7 @@ You are a triage agent. Classify each email below by urgency level.
 
 ### Input
 
-- **Emails:** {{steps.Email Fetch.output}}
+- **Emails:** {{step.context.emails}}
 
 ### Output Format
 

@@ -1,5 +1,12 @@
 # Release Notes
 
+## v1.0.4
+GH#1100 migration wave (batch 2) — stop naming a step that belongs to the consumer.
+
+The body read `{{steps.Email Fetch.output}}`, a step title that exists in the consuming workflow rather than in this prompt. That is the shape §4.3.1 describes as superseded: the prompt reached into its consumer's step list, so it only worked in a consumer that happened to have a step of that name, and it silently resolved to the wrong thing in one that had a different step with the same title.
+
+It now reads `{{step.context.emails}}` and declares `emails` as a **required** context param. The consumer wires it with `bindings: { emails: { from_step: "Email Fetch" } }` — the name stays, but it is now the CONSUMER's statement about its own steps rather than the shared prompt's assumption about someone else's.
+
 ## v1.0.3
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

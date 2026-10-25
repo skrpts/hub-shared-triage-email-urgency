@@ -3,7 +3,7 @@ id: "7ae86833-f0f9-4ec7-8a9c-419d9af83c0b"
 name: "triage-email-urgency"
 display_name: "Triage Urgency"
 description: "Classifies emails by urgency level for the morning briefing"
-version: "1.0.3"
+version: "1.0.4"
 engine: ">=0.1.0"
 author:
   name: "skrptiq"
@@ -28,7 +28,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-16T14:49:39.440Z"
+  scanned_at: "2026-10-25T15:56:01.980Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
